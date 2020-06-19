@@ -28,7 +28,6 @@ header i {
     display: flex;
     width: 20%;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 #logo h3 {
