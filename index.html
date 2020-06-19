@@ -41,6 +41,8 @@
 
     <section id="form-col">
         <div class="container">
+            <div class="errors" id="errors"></div>
+            <div class="success" id="success"></div>
             <div class="form-content">
                 <div>
                     <h3>Send to</h3>
@@ -53,36 +55,33 @@
                         </select>
                     </div>
                     <div>
-                        <select>
-                            <option value="">Airtime</option>
-                            <option value="">Glo</option>
-                            <option value="">MTN</option>
-                            <option value="">9-mobile</option>
-                            <option value="">Airtel</option>
+                        <select name="network" id="network">
+                            <option value="">Select Network</option>
+                            <option value="glo">Glo</option>
+                            <option value="mtn">MTN</option>
+                            <option value="etisalat">9-mobile</option>
+                            <option value="airtel">Airtel</option>
                         </select>
                     </div>
                 </div>
                 <div class="send-to">
                     <div>
-                        <label for="">Send Recharge to</label>
-                        <select>
-                            <option value="">Interns</option>
-                            <option value="">Mentors</option>
-                            <option value="">Alumni</option>
-                        </select>
+                        <label for="phone">Enter Phone Number</label>
+                        <input type="text" name="phone" id="phone">
                     </div>
                     <div>
-                        <label for="">Confirm the amount</label>
-                        <input type="text" value="1000.00">
+                        <label for="amount">Confirm the amount</label>
+                        <input type="text" name="amount" id="amount">
                     </div>
                 </div>
                 <div class="button-div">
-                    <button>Send</button>
+                    <button onclick="validate()">Send</button>
                 </div>
             </div>
         </div>
     </section>
 
     <footer></footer>
+    <script src="./purchase.js"></script>
 </body>
 </html>
